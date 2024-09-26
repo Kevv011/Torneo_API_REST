@@ -48,3 +48,11 @@ Todas las direcciones apuntaran directamente al contenido de las tablas creadas 
 
 ------------------------------------------------------------------ADICIONAL--------------------------------------------------------------------------
 • Tener configurado DOCKER DESKTOP para que admita UBUNTU. Hacer esto asi: "INGRESO A DOCKER DESKTOP > AJUSTES > RESOURCES > WSL INTEGRATION". Aqui activar a UBUNTU para que acepte comando DOCKER en esta terminal.
+• Se debe configurar el archivo llamado .env para registrar la conexion a la base de datos en el puerto del dispositivo local. El puerto usado comunmente por MySQL es el 3306, se especifica el nombre de la base de datos como "torneo_futbol", usuario "root" y contraseña que esta en el dispositivo local (Si no tiene contraseña dejar espacion en blanco). Ejemplo:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=torneo_futbol
+DB_USERNAME=root
+DB_PASSWORD= "Aqui va la contraseña de la instancia local de MySQL"
